@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/**************************START FONTS****************************/
+
+@font-face {
+  font-family: 'NewRocker';
+  src: url('fonts/NewRocker-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lumos';
+  src: url('Lumos-JRBj.ttf') format('truetype');
+}
+
+body {
+  font-family: 'NewRocker', cursive;
+}
+
+/**************************END FONTS****************************/
+
+/**************************START HEADER****************************/
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-nav {
+  background-color: #000000;
+}
+
+.logo {
+  max-width: 50px;
+  padding: 15px 0 15px 15px;
+}
+
+.home {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.home img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  max-width: 245px;
+  margin: auto;
+}
+
+/**************************END HEADER****************************/
+
+
+
+/* ************************HAMBURGER MENU STYLES ***************************** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:15px 15px 0px 0px;
+  color:#ffcb16;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#ffcb16;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; position:absolute; top: 45px; text-align:center; font-size:12px;}
+.g-nav{background:#541a1a;}
+.s-nav{background:#1d3529;}
+.h-nav{background:#ffcb16;}
+.r-nav{background:#1d426d;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.g-nav:hover{background:#7f2828;}
+.s-nav:hover{background:#3a664f;}
+.h-nav:hover{background:#fdd753;}
+.r-nav:hover{background:#2c5e9b;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#ffffff;}
+.menu ul li a:hover {  color: #ffffff; text-decoration:none;}
+.menu a{text-decoration:none; color:#ffffff;}
+.menu a:hover{text-decoration:none; color:#ffffff;
+}
+/* ************************HAMBURGER MENU STYLES ***************************** */

@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>2020 Hogwarts Yearbook</title>
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-content-1" />
 
     <!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   </head>
 
@@ -19,34 +21,39 @@
     <header>
 
 <!-- desktop menu -->
-      <div class="nav-flex">
-        <a href="#"><img src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
-
-        <nav class="desktop-menu">
-          <ul>
-            <li><a href="#">Gryffindor</a></li>
-            <li><a href="#">Slytherin</a></li>
-            <li><a href="#">Hufflepuff</a></li>
-            <li><a href="#">Ravenclaw</a></li>
-          </ul>
-        </nav>
-      </div>
-
-<!-- hamburger menu -->
-      <nav class="menu">
+      <nav class="desktop-menu">
         <ul>
           <li><a href="#">Gryffindor</a></li>
           <li><a href="#">Slytherin</a></li>
+          <a href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
           <li><a href="#">Hufflepuff</a></li>
           <li><a href="#">Ravenclaw</a></li>
         </ul>
       </nav>
+
+<!-- mobile menu -->
+      <div class="mobile-nav">
+        <a href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+
+        <nav class="menu">
+          <ul>
+            <li class="g-nav"><a href="#">Gryffindor</a></li>
+            <li class="s-nav"><a href="#">Slytherin</a></li>
+            <li class="h-nav"><a href="#">Hufflepuff</a></li>
+            <li class="r-nav"><a href="#">Ravenclaw</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <img src="images/hogwarts-crest.png" alt="Hogwarts Crest" />
-      <h1>2020 Hogwarts Yearbook</h1>
+      <section class="home">
+        <img src="images/hogwarts-crest.png" alt="Hogwarts Crest" />
+        <h1>2020 Hogwarts Yearbook</h1>
+      </section>
     </main>
+
+    <script src="js/hamburger.js"></script>
 
   </body>
 </html>
