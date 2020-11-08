@@ -34,11 +34,12 @@ body {
 
 .mobile-nav {
   background-color: #000000;
+	display: flex;
 }
 
 .logo {
-  max-width: 50px;
-  padding: 15px 0 15px 5%;
+  max-width: 35px;
+  margin: 5px 0 5px 5%;
 }
 /**************************END HEADER****************************/
 
@@ -62,7 +63,7 @@ body {
   padding: 50px 0;
 }
 
-#home img {
+.crest {
   width: 100%;
   padding-bottom: 25px;
 	max-width: 350px;
@@ -70,12 +71,18 @@ body {
   margin: auto;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   font-size: 2.5rem;
   max-width: 245px;
   margin: auto;
   color: #ffffff;
+}
+
+.arrow {
+	max-width: 32px;
+	display: flex;
+	margin: 20px auto;
 }
 
 /**************************END MAIN****************************/
@@ -192,3 +199,105 @@ footer {
 .menu a:hover{text-decoration:none; color:#ffffff;
 }
 /* ************************HAMBURGER MENU STYLES ***************************** */
+
+/**************************START MIN-WIDTH 400px MEDIA QUERY****************************/
+
+/* Homepage */
+@media (min-width: 400px) {
+
+	h1 {
+		max-width: 500px;
+	}
+
+}
+
+/**************************END MIN-WIDTH 400px MEDIA QUERY****************************/
+
+/**************************START MIN-WIDTH 600px MEDIA QUERY****************************/
+
+/* Homepage */
+@media (min-width: 600px) {
+
+	.mobile-nav, .hamburger, .cross {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: flex;
+		justify-content: center;
+		background-color: #000000;
+	}
+
+	.desktop-menu ul {
+		list-style-type: none;
+		display: flex;
+    align-items: center;
+	}
+
+	.desktop-menu ul li {
+		display: inline;
+		padding-right: 30px;
+	}
+
+	.desktop-menu ul li:last-child {
+		padding-right: 0px;
+	}
+
+	.desktop-menu ul li a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.logo {
+		margin: 5px 30px 5px 0;
+	}
+
+	h1 {
+		max-width: 500px;
+	}
+
+}
+
+/**************************END MIN-WIDTH 600px MEDIA QUERY****************************/
+
+/**************************START MIN-WIDTH 800px MEDIA QUERY****************************/
+
+/* Homepage */
+@media (min-width: 800px) {
+
+	.desktop-menu ul li {
+		padding-right: 45px;
+	}
+
+	.desktop-menu ul li:last-child {
+		padding-right: 0px;
+	}
+
+	.logo {
+		margin-right: 45px;
+	}
+
+}
+
+/**************************END MIN-WIDTH 800px MEDIA QUERY****************************/
+
+/**************************START MIN-WIDTH 1000px MEDIA QUERY****************************/
+
+/* Homepage */
+@media (min-width: 1000px) {
+
+	.desktop-menu ul li {
+		padding-right: 60px;
+	}
+
+	.desktop-menu ul li:last-child {
+		padding-right: 0px;
+	}
+
+	.logo {
+		margin-right: 60px;
+	}
+
+}
+
+/**************************END MIN-WIDTH 1000px MEDIA QUERY****************************/
