@@ -21,7 +21,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 body {
-  font-family: 'NewRocker', cursive;
+  font-family: 'NewRocker', sans-serif;
 }
 
 /**************************END FONTS****************************/
@@ -38,17 +38,36 @@ body {
 
 .logo {
   max-width: 50px;
-  padding: 15px 0 15px 15px;
+  padding: 15px 0 15px 5%;
+}
+/**************************END HEADER****************************/
+
+/**************************START MAIN****************************/
+
+/*Homepage*/
+
+.home-flex {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
-.home {
+.midground, .foreground, .background {
+	flex: 1;
+}
+
+#home {
   width: 90%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
-.home img {
+#home img {
   width: 100%;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+	max-width: 350px;
+  display: flex;
+  margin: auto;
 }
 
 h1 {
@@ -56,10 +75,72 @@ h1 {
   font-size: 2.5rem;
   max-width: 245px;
   margin: auto;
+  color: #ffffff;
 }
 
-/**************************END HEADER****************************/
+/**************************END MAIN****************************/
 
+/**************************START FOOTER****************************/
+
+footer {
+	background-color: #000000;
+	padding: 30px 0;
+	margin-top: -80px;
+	text-align: center;
+	color: #ffffff;
+}
+
+/**************************END FOOTER****************************/
+
+
+/**************************START STARLIGHT ANIMATION****************************/
+@-webkit-keyframes STAR-MOVE {
+	from {
+		background-position: 5% 5%
+	}
+	to {
+		background-position: 1300% 600%
+	}
+}
+
+.background {
+	background: black url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: -3;
+}
+
+.midground {
+	background: url(images/midground.png) repeat 20% 20%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	margin-bottom: -25px;
+	z-index: -2;
+
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 150s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.foreground {
+	background: url(images/foreground.png) repeat 35% 35%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	margin-bottom: -25px;
+	z-index: -1;
+
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 100s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/**************************END STARLIGHT ANIMATION****************************/
 
 
 /* ************************HAMBURGER MENU STYLES ***************************** */
@@ -69,7 +150,7 @@ h1 {
   top:0;
   right:0;
   line-height:45px;
-  padding:15px 15px 0px 0px;
+  padding:15px 5% 0px 0px;
   color:#ffcb16;
   border:0;
   font-size:1.4em;
@@ -83,7 +164,7 @@ h1 {
   position:absolute;
   top:0px;
   right:0;
-  padding:7px 15px 0px 15px;
+  padding:7px 5% 0px 0px;
   color:#ffcb16;
   border:0;
   font-size:3em;
@@ -96,15 +177,15 @@ h1 {
 .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; position:absolute; top: 45px; text-align:center; font-size:12px;}
 .g-nav{background:#541a1a;}
 .s-nav{background:#1d3529;}
-.h-nav{background:#ffcb16;}
-.r-nav{background:#1d426d;}
+.h-nav{background:#897936;}
+.r-nav{background:#0e1a40;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.g-nav:hover{background:#7f2828;}
-.s-nav:hover{background:#3a664f;}
-.h-nav:hover{background:#fdd753;}
-.r-nav:hover{background:#2c5e9b;}
+.g-nav:hover{background:#722424;}
+.s-nav:hover{background:#315944;}
+.h-nav:hover{background:#ad9945;}
+.r-nav:hover{background:#172e66;}
 .menu ul li a { text-decoration:none;  margin: 0px; color:#ffffff;}
 .menu ul li a:hover {  color: #ffffff; text-decoration:none;}
 .menu a{text-decoration:none; color:#ffffff;}
