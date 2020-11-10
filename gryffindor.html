@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2020 Hogwarts Yearbook</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-content-1" />
+
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
+    <header>
+
+<!-- desktop menu -->
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="gryffindor.html">Gryffindor</a></li>
+          <li><a href="slytherin.html">Slytherin</a></li>
+          <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+          <li><a href="hufflepuff.html">Hufflepuff</a></li>
+          <li><a href="ravenclaw.html">Ravenclaw</a></li>
+        </ul>
+      </nav>
+
+<!-- mobile menu -->
+      <div class="mobile-nav">
+        <a class="logo" href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+
+        <nav class="menu">
+          <ul>
+            <li class="g-nav"><a href="gryffindor.html">Gryffindor</a></li>
+            <li class="s-nav"><a href="slytherin.html">Slytherin</a></li>
+            <li class="h-nav"><a href="hufflepuff.html">Hufflepuff</a></li>
+            <li class="r-nav"><a href="ravenclaw.html">Ravenclaw</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <main>
+          <!-- Hero image with house name and description (use position absolute and position relative to get text over image)-->
+
+            <img class="hero-image" src="images/lion.jpg" alt="Lion" />
+              <div class="hero-text">
+                <h1>Gryffindor</h1>
+                <p>You might belong in Gryffindor,</p>
+                <p>Where dwell the brave at heart,</p>
+                <p>Their daring, nerve, and chivalry</p>
+                <p>Set Gryffindors apart"</p>
+              </div>
+
+
+          <!-- Character section with description (use flexbox) -->
+          <!-- For the background use color: #AD7F45 -->
+          <div class="orange-background">
+
+            <h1 class="">Superlatives</h1>
+            <div class="flex-container">
+
+                  <section class="content">
+                    <div class="content-overlay"></div>
+                      <img class="content-image" src="images/potter.jpg" alt="Harry Potter"/>
+                    <div class="content-details fadeIn-bottom">
+                      <h2>Harry Potter</h2>
+                    </div>
+                      <h3>Most Likely to Not Die</h3>
+                      <p>The Chosen One. Harry Potter can probably survive multiple nuclear holocausts because the guy just won't die. Sucks to be Voldermort.</p>
+
+                  </section>
+
+                  <section class="content">
+                    <div class="content-overlay"></div>
+                      <img class="content-image" src="images/granger.jpg" alt="Hermione Granger"/>
+                    <div class="content-details fadeIn-bottom">
+                      <h2>Hermione Granger</h2>
+                    </div>
+                      <h3>Most Likely to Become Minister of Magic</h3>
+                      <p>The Brains. Yes, Hermione Granger, may be inclined to point out that everything you’re saying is incorrect, but how would you learn otherwise? She’s also too smart for Ron.</p>
+
+                  </section>
+
+                  <section class="content">
+                    <div class="content-overlay"></div>
+                      <img class="content-image" src="images/weasley.jpg" alt="Ron Weasley"/>
+                    <div class="content-details fadeIn-bottom">
+                      <h2>Ron Weasley</h2>
+                    </div>
+                      <h3>Most Likely to Win at Wizard's Chess</h3>
+                      <p>The Chess Master. Ron Weasley seemed dim-witted on occasion and we wonder how he ended up with Hermione, but we’ll always remember that fantastic game of Wizard’s Chess from Year One.
+                      </p>
+                  </section>
+
+                </div>
+
+          </div>
+      </main>
+
+      <footer>
+        &#169; 2020 Hogwarts Yearbook Committee
+      </footer>
+
+      <script src="js/hamburger.js"></script>
+
+
+    </body>
+  </html>
