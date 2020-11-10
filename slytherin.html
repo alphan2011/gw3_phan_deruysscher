@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2020 Hogwarts Yearbook</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-content-1" />
+
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
+    <header>
+
+<!-- desktop menu -->
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="gryffindor.html">Gryffindor</a></li>
+          <li><a href="slytherin.html">Slytherin</a></li>
+          <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+          <li><a href="hufflepuff.html">Hufflepuff</a></li>
+          <li><a href="ravenclaw.html">Ravenclaw</a></li>
+        </ul>
+      </nav>
+
+<!-- mobile menu -->
+      <div class="mobile-nav">
+        <a class="logo" href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+
+        <nav class="menu">
+          <ul>
+            <li class="g-nav"><a href="gryffindor.html">Gryffindor</a></li>
+            <li class="s-nav"><a href="slytherin.html">Slytherin</a></li>
+            <li class="h-nav"><a href="hufflepuff.html">Hufflepuff</a></li>
+            <li class="r-nav"><a href="ravenclaw.html">Ravenclaw</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <main>
+          <!-- Hero image with house name and description (use position absolute and position relative to get text over image)-->
+
+            <img class="hero-image" src="images/snake.jpg" alt="Snake" />
+              <div class="hero-text">
+                <h1>Slytherin</h1>
+                <p>"Or perhaps in Slytherin,</p>
+                <p>You'll make your real friends,</p>
+                <p>Those cunning folk use any means,</p>
+                <p>To achieve their ends"</p>
+              </div>
+
+
+          <!-- Character section with description (use flexbox) -->
+          <!-- For the background use color: #AD7F45 -->
+          <div class="orange-background">
+
+            <h1 class="">What will you miss most about Hogwarts?</h1>
+            <div class="flex-container">
+
+                  <section class="content">
+                    <div class="content-overlay"></div>
+                      <img class="content-image" src="images/draco.jpg" alt="Draco Malfoy"/>
+                    <div class="content-details fadeIn-bottom">
+                      <h2>Draco Malfoy</h2>
+                    </div>
+                      <p>Being around lots of other kids my age. I’ll no longer have as many opportunities to bully my inferiors.
+                      Especially Potter and his gang. (His father will be hearing about this.)</p>
+
+                  </section>
+
+                  <section class="content">
+                    <div class="content-overlay"></div>
+                      <img class="content-image" src="images/crabbe.jpg" alt="Vincent Crabbe"/>
+                    <div class="content-details fadeIn-bottom">
+                      <h2>Vincent Crabbe</h2>
+                    </div>
+                      <p>The food. Corned beef sandwiches, pumpkin pasties, turkey legs… (We had to cut him off. This interview
+                      was conducted before his death. RIP, I suppose.)</p>
+
+                  </section>
+
+                  <section class="content">
+                    <div class="content-overlay"></div>
+                      <img class="content-image" src="images/goyle.jpg" alt="Gregory Goyle"/>
+                    <div class="content-details fadeIn-bottom">
+                      <h2>Gregory Goyle</h2>
+                    </div>
+                      <p>I’m not sure. I know I won’t miss homework. My father had to bribe my professors so I could pass my
+                      classes. (He regretted it as soon as he said it.)
+                      </p>
+                  </section>
+
+                </div>
+
+          </div>
+      </main>
+
+      <footer>
+        &#169; 2020 Hogwarts Yearbook Committee
+      </footer>
+
+      <script src="js/hamburger.js"></script>
+
+
+    </body>
+  </html>
