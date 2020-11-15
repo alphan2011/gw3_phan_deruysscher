@@ -82,6 +82,11 @@ body {
 
 .gold-background {
 	background-color: #ad7f45;
+	padding: 40px 0;
+}
+
+.g-border {
+	border: 1px solid #ad7f45;
 }
 
 .red-bg {
@@ -98,8 +103,13 @@ body {
 
 /* Slytherin page */
 
-.silver-background {
-	background-color: #757575;
+.black-background {
+	background-color: #000000;
+	padding: 40px 0;
+}
+
+.s-border {
+	border: 1px solid #bec2cb;
 }
 
 .green-bg {
@@ -116,8 +126,13 @@ body {
 
 /* Hufflepuff page */
 
-.black-background {
-	background-color: #110c07;
+.gray-background {
+	background-color: #222222;
+	padding: 40px 0;
+}
+
+.h-border {
+	border: 1px solid #000000;
 }
 
 .yellow-bg {
@@ -135,7 +150,12 @@ body {
 /* Ravenclaw page */
 
 .brown-background {
-	background-color: #23120b;
+	background-color: #a97142;
+	padding: 40px 0;
+}
+
+.r-border {
+	border: 1px solid #a97142;
 }
 
 .blue-bg {
@@ -168,12 +188,13 @@ body {
 }
 
 .theme-heading {
-	padding: 60px 0;
 	font-size: 2rem;
 	letter-spacing: 0.1rem;
 	font-weight: 100;
 	text-align: center;
   color: #ffffff;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .flex-container {
@@ -185,8 +206,10 @@ body {
 }
 
 .flex-item {
-	max-width: 400px;
+	max-width: 300px;
 	margin-bottom: 50px;
+	box-sizing: border-box;
+	padding: 0 20px 20px 20px;
 }
 
 .flex-item:last-child {
@@ -465,6 +488,12 @@ footer {
 
 	.hero-text h1 {
 		font-size: 4rem;
+	}
+
+	/* Styles that apply to all House pages */
+
+	.flex-item {
+		max-width: 400px;
 	}
 
 }
