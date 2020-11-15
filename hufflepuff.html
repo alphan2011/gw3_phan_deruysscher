@@ -38,7 +38,7 @@
 
 <!-- mobile menu -->
       <div class="mobile-nav">
-        <a class="logo" href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+        <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
 
         <nav class="menu">
           <ul>
@@ -51,69 +51,75 @@
       </div>
     </header>
 
-      <main>
-          <!-- Hero image with house name and description (use position absolute and position relative to get text over image)-->
+    <main>
 
-            <img class="hero-image" src="images/badger.jpg" alt="Badger" />
-              <div class="hero-text">
-                <h1>Hufflepuff</h1>
-                <p>"You might belong in Hufflepuff,</p>
-                <p>Where they are just and loyal,</p>
-                <p>Those patient Hufflepuffs are true,</p>
-                <p>And unafraid of toil"</p>
-              </div>
+<!-- Hero image-->
+      <div class="hufflepuff-hero hero-text">
+        <h1>Hufflepuff</h1>
+        <p>"You might belong in Hufflepuff,</p>
+        <p>Where they are just and loyal,</p>
+        <p>Those patient Hufflepuffs are true,</p>
+        <p>And unafraid of toil"</p>
+      </div>
 
 
-          <!-- Character section with description (use flexbox) -->
-          <!-- For the background use color: #AD7F45 -->
-          <div class="orange-background">
+<!-- Character section with description (use flexbox) -->
+<!-- For the background use color: #110c07 -->
+<!-- "Content..." classes are for hover image effect -->
+      <div class="black-background">
 
-            <h1 class="">What is your favorite magical creature?</h1>
-            <div class="flex-container">
+        <h2 class="theme-heading">What is your favorite magical creature?</h2>
 
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/bones.jpg" alt="Susan Bones"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Susan Bones</h2>
-                    </div>
-                      <p>Dragons. They’re amazing aren’t they? They breathe fire and can fly and are ridiculously powerful!</p>
+        <div class="yellow-bg">
+          <div class="flex-container">
+            <section>
+              <h3>Cedric Diggory</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/diggory.jpg" alt="Cedric Diggory"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Dragons</h4>
+                    <p>They’re amazing aren’t they? They breathe fire and can fly and are ridiculously powerful! (He’s also deceased, but came back as a sparkly vampire, apparently.)</p>
+                  </figcaption>
+                </figure>
+            </section>
 
-                  </section>
+            <section>
+              <h3>Ernie Macmillan</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/ernie.jpg" alt="Ernie Macmillan"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Hippogriffs</h4>
+                    <p>I don’t know what percent hippo they are, but they’re so cool! (We recognized most of the other students we interviewed, but not this one.)</p>
+                  </figcaption>
+                </figure>
+            </section>
 
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/ernie.jpg" alt="Ernie Macmillan"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Ernie Macmillan</h2>
-                    </div>
-                      <p>Hippogriffs. I don’t know what percent hippo they are, but they’re so cool! (We recognized most of the
-                      other students we interviewed, but not this one.)</p>
-
-                  </section>
-
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/abbott.jpg" alt="Hannah Abbott"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Hannah Abbott</h2>
-                    </div>
-                      <p>Cats. They’re just the best to cuddle and are incredibly adorable! (Cats are technically not magical
-                      creatures, but she doesn’t care.)
-                      </p>
-                  </section>
-
-                </div>
+            <section>
+              <h3>Hannah Abbott</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/abbott.jpg" alt="Hannah Abbott"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Cats</h4>
+                    <p>They’re just the best to cuddle and are incredibly adorable! (Cats are technically not magical creatures, but she doesn’t care.)
+                    </p>
+                  </figcaption>
+                </figure>
+            </section>
 
           </div>
-      </main>
+        </div>
+      </div>
+    </main>
 
-      <footer>
+    <footer class="alt-footer">
         &#169; 2020 Hogwarts Yearbook Committee
-      </footer>
+    </footer>
 
-      <script src="js/hamburger.js"></script>
+    <script src="js/hamburger.js"></script>
 
 
-    </body>
-  </html>
+  </body>
+</html>

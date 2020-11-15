@@ -116,11 +116,30 @@ body {
   padding: 80px 0;
 }
 
+/* Hufflepuff page */
+
+.black-background {
+	background-color: #110c07;
+}
+
+.yellow-bg {
+	background-color: #897936;
+	padding: 50px 0 100px 0;
+}
+
+.hufflepuff-hero {
+	background-image: url(images/badger.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
 /* Styles that apply to all House pages */
 
 .hero-text h1 {
 	font-family: 'Lumos', serif;
 	font-weight: 100;
+	font-size: 3rem;
 	color: #ffffff;
 	text-align: center;
 	margin: auto;
@@ -419,6 +438,10 @@ footer {
 
 	h1 {
 		max-width: 500px;
+	}
+
+	.hero-text h1 {
+		font-size: 4rem;
 	}
 
 }
