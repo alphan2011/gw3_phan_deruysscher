@@ -11,17 +11,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 /**************************START FONTS****************************/
 
 @font-face {
-  font-family: 'NewRocker';
-  src: url('fonts/NewRocker-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Lumos';
-  src: url('Lumos-JRBj.ttf') format('truetype');
+  src: url('fonts/Lumos-JRBj.woff') format('woff');
 }
 
 body {
-  font-family: 'NewRocker', sans-serif;
+  font-family: 'New Rocker', sans-serif;
 }
 
 /**************************END FONTS****************************/
@@ -54,7 +49,7 @@ body {
 }
 
 .midground, .foreground, .background {
-	flex: 1;
+	display: flex;
 }
 
 #home {
@@ -71,7 +66,7 @@ body {
   margin: auto;
 }
 
-h1, h2 {
+#home h1, #home h2 {
   text-align: center;
   font-size: 2.5rem;
   max-width: 245px;
@@ -83,6 +78,151 @@ h1, h2 {
 	max-width: 32px;
 	display: flex;
 	margin: 20px auto;
+}
+
+/* Gryffindor page */
+
+.gold-background {
+	background-color: #ad7f45;
+}
+
+.red-bg {
+	background-color: #541a1a;
+	padding: 50px 0 100px 0;
+}
+
+.gryffindor-hero {
+	background-image: url(images/lion.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+/* Styles that apply to all House pages */
+
+.hero-text h1 {
+	font-family: 'Lumos', serif;
+	font-weight: 100;
+	color: #ffffff;
+	text-align: center;
+	margin: auto;
+}
+
+.hero-text p {
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+}
+
+.theme-heading {
+	padding: 60px 0;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	font-weight: 100;
+	text-align: center;
+  color: #ffffff;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+section {
+	max-width: 400px;
+	margin-bottom: 50px;
+}
+
+section:last-child {
+	margin-bottom: 0;
+}
+
+/* Hover image effect */
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+h3 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 100;
+	padding: 30px 0;
+}
+
+.content-details h4 {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-family: 'Lumos', serif;
+}
+
+.content-details p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fadeIn-bottom {
+  top: 80%;
 }
 
 /**************************END MAIN****************************/
@@ -97,6 +237,11 @@ footer {
 	color: #ffffff;
 }
 
+/* Styles that apply to all House pages */
+
+.alt-footer {
+	margin-top: 0;
+}
 /**************************END FOOTER****************************/
 
 
@@ -203,9 +348,10 @@ footer {
 /**************************START MIN-WIDTH 400px MEDIA QUERY****************************/
 
 /* Homepage */
+
 @media (min-width: 400px) {
 
-	h1 {
+	#home h1 {
 		max-width: 500px;
 	}
 
@@ -216,6 +362,7 @@ footer {
 /**************************START MIN-WIDTH 600px MEDIA QUERY****************************/
 
 /* Homepage */
+
 @media (min-width: 600px) {
 
 	.mobile-nav, .hamburger, .cross {
@@ -263,6 +410,7 @@ footer {
 /**************************START MIN-WIDTH 800px MEDIA QUERY****************************/
 
 /* Homepage */
+
 @media (min-width: 800px) {
 
 	.desktop-menu ul li {
@@ -277,6 +425,13 @@ footer {
 		margin-right: 45px;
 	}
 
+/* Styles that apply to all House pages */
+
+	.flex-container {
+		max-width: 900px;
+		justify-content: space-evenly;
+	}
+
 }
 
 /**************************END MIN-WIDTH 800px MEDIA QUERY****************************/
@@ -284,6 +439,7 @@ footer {
 /**************************START MIN-WIDTH 1000px MEDIA QUERY****************************/
 
 /* Homepage */
+
 @media (min-width: 1000px) {
 
 	.desktop-menu ul li {
@@ -301,3 +457,22 @@ footer {
 }
 
 /**************************END MIN-WIDTH 1000px MEDIA QUERY****************************/
+
+/**************************START MIN-WIDTH 1225px MEDIA QUERY****************************/
+
+/* Styles that apply to all House pages */
+
+@media (min-width: 1225px) {
+
+	.flex-container {
+		max-width: 1500px;
+		width: 100%;
+	}
+
+	section {
+		margin-bottom: 0;
+	}
+
+}
+
+/**************************END MIN-WIDTH 1225px MEDIA QUERY****************************/
