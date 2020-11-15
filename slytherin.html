@@ -38,7 +38,7 @@
 
 <!-- mobile menu -->
       <div class="mobile-nav">
-        <a class="logo" href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+        <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
 
         <nav class="menu">
           <ul>
@@ -51,70 +51,78 @@
       </div>
     </header>
 
-      <main>
-          <!-- Hero image with house name and description (use position absolute and position relative to get text over image)-->
+    <main>
 
-            <img class="hero-image" src="images/snake.jpg" alt="Snake" />
-              <div class="hero-text">
-                <h1>Slytherin</h1>
-                <p>"Or perhaps in Slytherin,</p>
-                <p>You'll make your real friends,</p>
-                <p>Those cunning folk use any means,</p>
-                <p>To achieve their ends"</p>
-              </div>
+<!-- Hero image-->
+      <div class="slytherin-hero hero-text">
+        <h1>Slytherin</h1>
+        <p>"Or perhaps in Slytherin,</p>
+        <p>You'll make your real friends,</p>
+        <p>Those cunning folk use any means,</p>
+        <p>To achieve their ends"</p>
+      </div>
 
 
-          <!-- Character section with description (use flexbox) -->
-          <!-- For the background use color: #AD7F45 -->
-          <div class="orange-background">
+<!-- Character section with description (use flexbox) -->
+<!-- For the background use color: #757575 -->
+<!-- "Content..." classes are for hover image effect -->
+      <div class="silver-background">
 
-            <h1 class="">What will you miss most about Hogwarts?</h1>
-            <div class="flex-container">
+        <h2 class="theme-heading">What will you miss most about Hogwarts?</h2>
 
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/draco.jpg" alt="Draco Malfoy"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Draco Malfoy</h2>
-                    </div>
-                      <p>Being around lots of other kids my age. I’ll no longer have as many opportunities to bully my inferiors.
-                      Especially Potter and his gang. (His father will be hearing about this.)</p>
+        <div class="green-bg">
+          <div class="flex-container">
+            <section>
+              <h3>Draco Malfoy</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/draco.jpg" alt="Draco Malfoy"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Being around other kids my age</h4>
+                    <p>I’ll no longer have as many opportunities to bully my inferiors.
+                    Especially Potter and his gang. (His father will be hearing about this.)</p>
+                  </figcaption>
+                </figure>
+            </section>
 
-                  </section>
+            <section>
+              <h3>Vincent Crabbe</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/crabbe.jpg" alt="Vincent Crabbe"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>The food</h4>
+                    <p>Corned beef sandwiches, pumpkin pasties, turkey legs… (We had to cut him off. This interview
+                    was conducted before his death. RIP, I suppose.)</p>
+                  </figcaption>
+                </figure>
+            </section>
 
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/crabbe.jpg" alt="Vincent Crabbe"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Vincent Crabbe</h2>
-                    </div>
-                      <p>The food. Corned beef sandwiches, pumpkin pasties, turkey legs… (We had to cut him off. This interview
-                      was conducted before his death. RIP, I suppose.)</p>
-
-                  </section>
-
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/goyle.jpg" alt="Gregory Goyle"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Gregory Goyle</h2>
-                    </div>
-                      <p>I’m not sure. I know I won’t miss homework. My father had to bribe my professors so I could pass my
-                      classes. (He regretted it as soon as he said it.)
-                      </p>
-                  </section>
-
-                </div>
+            <section>
+              <h3>Gregory Goyle</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/goyle.jpg" alt="Gregory Goyle"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Not sure</h4>
+                    <p>I know I won’t miss homework. My father had to bribe my professors so I could pass my
+                    classes. (He regretted it as soon as he said it.)
+                    </p>
+                  </figcaption>
+                </figure>
+            </section>
 
           </div>
-      </main>
+        </div>
+      </div>
+    </main>
 
-      <footer>
+    <footer class="alt-footer">
         &#169; 2020 Hogwarts Yearbook Committee
-      </footer>
+    </footer>
 
-      <script src="js/hamburger.js"></script>
+    <script src="js/hamburger.js"></script>
 
 
-    </body>
-  </html>
+  </body>
+</html>

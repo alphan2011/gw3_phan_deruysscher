@@ -98,6 +98,24 @@ body {
   padding: 80px 0;
 }
 
+/* Slytherin page */
+
+.silver-background {
+	background-color: #757575;
+}
+
+.green-bg {
+	background-color: #1d3529;
+	padding: 50px 0 100px 0;
+}
+
+.slytherin-hero {
+	background-image: url(images/snake.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
 /* Styles that apply to all House pages */
 
 .hero-text h1 {
