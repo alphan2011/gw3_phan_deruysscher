@@ -55,7 +55,7 @@ body {
 #home {
   width: 90%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 
 .crest {
@@ -74,10 +74,8 @@ body {
   color: #ffffff;
 }
 
-.arrow {
-	max-width: 32px;
-	display: flex;
-	margin: 20px auto;
+.homepage-arrow {
+	margin: 0 auto;
 }
 
 /* Gryffindor page */
@@ -186,13 +184,20 @@ body {
   justify-content: center;
 }
 
-section {
+.flex-item {
 	max-width: 400px;
 	margin-bottom: 50px;
 }
 
-section:last-child {
+.flex-item:last-child {
 	margin-bottom: 0;
+}
+
+.arrow {
+	display: flex;
+	margin: 50px auto 0 auto;
+	justify-content: space-between;
+	padding: 0 5% 0 5%;
 }
 
 /* Hover image effect */
@@ -484,6 +489,13 @@ footer {
 		margin-right: 45px;
 	}
 
+	.homepage-arrow {
+		display: flex;
+		margin: 0;
+		justify-content: flex-end;
+    padding: 0 5% 0 5%;
+	}
+
 /* Styles that apply to all House pages */
 
 	.flex-container {
@@ -528,7 +540,7 @@ footer {
 		width: 100%;
 	}
 
-	section {
+	.flex-item {
 		margin-bottom: 0;
 	}
 
