@@ -134,6 +134,24 @@ body {
   padding: 80px 0;
 }
 
+/* Ravenclaw page */
+
+.brown-background {
+	background-color: #23120b;
+}
+
+.blue-bg {
+	background-color: #0e1a40;
+	padding: 50px 0 100px 0;
+}
+
+.ravenclaw-hero {
+	background-image: url(images/raven.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
 /* Styles that apply to all House pages */
 
 .hero-text h1 {

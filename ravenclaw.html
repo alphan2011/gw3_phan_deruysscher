@@ -38,7 +38,7 @@
 
 <!-- mobile menu -->
       <div class="mobile-nav">
-        <a class="logo" href="#"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+        <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
 
         <nav class="menu">
           <ul>
@@ -51,70 +51,75 @@
       </div>
     </header>
 
-      <main>
-          <!-- Hero image with house name and description (use position absolute and position relative to get text over image)-->
+    <main>
 
-            <img class="hero-image" src="images/raven.jpg" alt="Raven" />
-              <div class="hero-text">
-                <h1>Ravenclaw</h1>
-                <p>"Or yet in wise old Ravenclaw,</p>
-                <p>If you've a ready mind,</p>
-                <p>Where those of wit and learning,</p>
-                <p>Will always find their kind"</p>
-              </div>
+<!-- Hero image-->
+      <div class="ravenclaw-hero hero-text">
+        <h1>Ravenclaw</h1>
+        <p>"Or yet in wise old Ravenclaw,</p>
+        <p>If you've a ready mind,</p>
+        <p>Where those of wit and learning,</p>
+        <p>Will always find their kind"</p>
+      </div>
 
 
-          <!-- Character section with description (use flexbox) -->
-          <!-- For the background use color: #AD7F45 -->
-          <div class="orange-background">
+<!-- Character section with description (use flexbox) -->
+<!-- For the background use color: #23120b -->
+<!-- "Content..." classes are for hover image effect -->
+      <div class="brown-background">
 
-            <h1 class="">What is your favorite spell?</h1>
-            <div class="flex-container">
+        <h2 class="theme-heading">What is your favorite spell?</h2>
 
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/cho.jpg" alt="Cho Chang"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Cho Chang</h2>
-                    </div>
-                      <p>Wingardium Leviosa. I get lazy sometimes and just levitate things over to me. (Not to gossip, but she
-                      dated a lot of the popular guys in school.)</p>
+        <div class="blue-bg">
+          <div class="flex-container">
+            <section>
+              <h3>Cho Chang</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/cho.jpg" alt="Cho Chang"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Wingardium Leviosa</h4>
+                    <p>I get lazy sometimes and just levitate things over to me. (Not to gossip, but she dated a lot of the popular guys in school.)</p>
+                  </figcaption>
+                </figure>
+            </section>
 
-                  </section>
+            <section>
+              <h3>Luna Lovegood</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/luna.jpg" alt="Luna Lovegood"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Alohomora</h4>
+                    <p>I always seem to misplace keys, so that spell helps me whenever I’m in a bind. (She’s kooky and relatable. We like her.)</p>
+                  </figcaption>
+                </figure>
+            </section>
 
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/luna.jpg" alt="Luna Lovegood"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Luna Lovegood</h2>
-                    </div>
-                      <p>Alohomora. I always seem to misplace keys, so that spell helps me whenever I’m in a bind. (She’s kooky
-                      and relatable. We like her.)</p>
-
-                  </section>
-
-                  <section class="content">
-                    <div class="content-overlay"></div>
-                      <img class="content-image" src="images/padma.jpg" alt="Padma Patil"/>
-                    <div class="content-details fadeIn-bottom">
-                      <h2>Padma Patil</h2>
-                    </div>
-                      <p>Lumos. Hogwarts can get really dark at night and I’m terrified of the dark. (Random fun fact: she has a
-                      twin.)
-                      </p>
-                  </section>
-
-                </div>
+            <section>
+              <h3>Padma Patil</h3>
+                <figure class="content">
+                  <div class="content-overlay"></div>
+                    <img class="content-image" src="images/padma.jpg" alt="Padma Patil"/>
+                  <figcaption class="content-details fadeIn-bottom">
+                    <h4>Lumos Maxima</h4>
+                    <p>Hogwarts can get really dark at night and I’m terrified of the dark. (Random fun fact: she has a twin.)
+                    </p>
+                  </figcaption>
+                </figure>
+            </section>
 
           </div>
-      </main>
+        </div>
+      </div>
+    </main>
 
-      <footer>
+    <footer class="alt-footer">
         &#169; 2020 Hogwarts Yearbook Committee
-      </footer>
+    </footer>
 
-      <script src="js/hamburger.js"></script>
+    <script src="js/hamburger.js"></script>
 
 
-    </body>
-  </html>
+  </body>
+</html>
