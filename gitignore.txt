@@ -1,0 +1,3 @@
+# ignore contents of swup-master
+**/swup-master
+swup-master/

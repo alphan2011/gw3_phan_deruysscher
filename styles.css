@@ -55,7 +55,7 @@ body {
 #home {
   width: 90%;
   margin: 0 auto;
-  padding: 50px 0 20px 0;
+  padding: 70px 0 30px 0;
 }
 
 .crest {
@@ -91,7 +91,7 @@ body {
 
 .red-bg {
 	background-color: #541a1a;
-	padding: 50px 0 100px 0;
+	padding: 50px 0;
 }
 
 .gryffindor-hero {
@@ -114,7 +114,7 @@ body {
 
 .green-bg {
 	background-color: #1d3529;
-	padding: 50px 0 100px 0;
+	padding: 50px 0;
 }
 
 .slytherin-hero {
@@ -137,7 +137,7 @@ body {
 
 .yellow-bg {
 	background-color: #897936;
-	padding: 50px 0 100px 0;
+	padding: 50px 0;
 }
 
 .hufflepuff-hero {
@@ -160,7 +160,7 @@ body {
 
 .blue-bg {
 	background-color: #0e1a40;
-	padding: 50px 0 100px 0;
+	padding: 50px 0;
 }
 
 .ravenclaw-hero {
@@ -315,16 +315,15 @@ h3 {
 footer {
 	background-color: #000000;
 	padding: 30px 0;
-	margin-top: -80px;
 	text-align: center;
 	color: #ffffff;
 }
 
 /* Styles that apply to all House pages */
 
-.alt-footer {
+/* .alt-footer {
 	margin-top: 0;
-}
+} */
 /**************************END FOOTER****************************/
 
 
@@ -343,7 +342,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-	padding-bottom: 20px;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: -3;
@@ -353,7 +351,6 @@ footer {
 	background: url(images/midground.png) repeat 20% 20%;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
-	margin-bottom: -25px;
 	z-index: -2;
 
 	-webkit-animation-name: STAR-MOVE;
@@ -366,7 +363,6 @@ footer {
 	background: url(images/foreground.png) repeat 35% 35%;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
-	margin-bottom: -25px;
 	z-index: -1;
 
 	-webkit-animation-name: STAR-MOVE;
@@ -427,6 +423,29 @@ footer {
 .menu a:hover{text-decoration:none; color:#ffffff;
 }
 /* ************************HAMBURGER MENU STYLES ***************************** */
+
+
+/**************************START SWUP ANIMATIONS****************************/
+
+.transition-fade {
+	opacity: 1;
+	transition: 500ms;
+	transform: translateX(0);
+	transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+	opacity: 1;
+	transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+	opacity: 0;
+	transform: translateX(0);
+}
+
+/**************************END SWUP ANIMATIONS****************************/
+
 
 /**************************START MIN-WIDTH 400px MEDIA QUERY****************************/
 

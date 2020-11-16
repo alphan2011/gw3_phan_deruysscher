@@ -2,17 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>2020 Hogwarts Yearbook</title>
-    <link type="text/css" rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-content-1" />
 
+    <script src="js/swup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+    <title>2020 Hogwarts Yearbook</title>
 
     <!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   </head>
 
@@ -25,11 +28,11 @@
 <!-- desktop menu -->
       <nav class="desktop-menu">
         <ul>
-          <li><a href="gryffindor.html">Gryffindor</a></li>
-          <li><a href="slytherin.html">Slytherin</a></li>
-          <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
-          <li><a href="hufflepuff.html">Hufflepuff</a></li>
-          <li><a href="ravenclaw.html">Ravenclaw</a></li>
+          <li><a href="/gryffindor.html">Gryffindor</a></li>
+          <li><a href="/slytherin.html">Slytherin</a></li>
+          <a class="logo" href="/main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+          <li><a href="/hufflepuff.html">Hufflepuff</a></li>
+          <li><a href="/ravenclaw.html">Ravenclaw</a></li>
         </ul>
       </nav>
 
@@ -49,7 +52,7 @@
     </header>
 
 <!-- Parallax background -->
-    <main class="home-flex">
+    <main id="swup" class="home-flex transition-fade">
       <div class="midground"></div>
       <div class="foreground"></div>
       <div class="background"></div>
