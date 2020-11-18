@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-content-1" />
 
-    <script src="js/swup.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/animsition.min.js"></script>
     <script src="js/scripts.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="css/animsition.min.css">
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
 
     <title>2020 Hogwarts Yearbook</title>
@@ -19,7 +20,10 @@
 
   </head>
 
-  <body>
+  <body class="animsition" data-animsition-in-class="fade-in"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out"
+  data-animsition-out-duration="800">
     <button class="hamburger">&#9776;</button>
 		<button class="cross">&#735;</button>
 
@@ -28,17 +32,17 @@
 <!-- desktop menu -->
       <nav class="desktop-menu">
         <ul>
-          <li><a href="/gryffindor.html">Gryffindor</a></li>
-          <li><a href="/slytherin.html">Slytherin</a></li>
-          <a class="logo" href="/main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
-          <li><a href="/hufflepuff.html">Hufflepuff</a></li>
-          <li><a href="/ravenclaw.html">Ravenclaw</a></li>
+          <li><a href="gryffindor.html">Gryffindor</a></li>
+          <li><a href="slytherin.html">Slytherin</a></li>
+          <a class="logo" href="index.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+          <li><a href="hufflepuff.html">Hufflepuff</a></li>
+          <li><a href="ravenclaw.html">Ravenclaw</a></li>
         </ul>
       </nav>
 
 <!-- mobile menu -->
       <div class="mobile-nav">
-        <a class="logo" href="main.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
+        <a class="logo" href="index.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
 
         <nav class="menu">
           <ul>
@@ -52,7 +56,7 @@
     </header>
 
 <!-- Parallax background -->
-    <main id="swup" class="home-flex transition-fade">
+    <main class="home-flex">
       <div class="midground"></div>
       <div class="foreground"></div>
       <div class="background"></div>
