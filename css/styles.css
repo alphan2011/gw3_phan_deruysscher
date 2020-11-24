@@ -78,7 +78,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .navbar > .active-sly > a {
-	color: #1d3529;
+	color: #2B4F3D;
 }
 
 .navbar > .active-huf > a {
@@ -86,7 +86,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .navbar > .active-rav > a {
-	color: #0e1a40;
+	color: #223E99;
 }
 
 /* Keyframes */

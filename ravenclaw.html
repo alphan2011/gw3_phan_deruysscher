@@ -31,13 +31,13 @@
     <header>
 
 <!-- desktop menu -->
-      <nav class="desktop-menu">
-        <ul>
+      <nav class="desktop-menu stroke">
+        <ul class="navbar">
           <li><a href="gryffindor.html">Gryffindor</a></li>
           <li><a href="slytherin.html">Slytherin</a></li>
           <a class="logo" href="index.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
           <li><a href="hufflepuff.html">Hufflepuff</a></li>
-          <li><a href="ravenclaw.html">Ravenclaw</a></li>
+          <li class="active-rav"><a href="ravenclaw.html">Ravenclaw</a></li>
         </ul>
       </nav>
 
@@ -55,6 +55,18 @@
         </nav>
       </div>
     </header>
+
+    <script>
+        $(document).ready(function () {
+
+            $('ul.navbar > li')
+                    .click(function (e) {
+                $('ul.navbar > li')
+                    .removeClass('active-rav');
+                $(this).addClass('active-rav');
+            });
+        });
+    </script>
 
     <main>
 
