@@ -42,13 +42,22 @@ body {
 /* Navigation Animation */
 
 nav ul li a {
-	padding: 10px;
+	padding: 25px 10px;
 }
 
-nav.fill ul li a {
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #C2C0C0;
+}
+
+nav.stroke ul li a {
   position: relative;
 }
-nav.fill ul li a:after {
+nav.stroke ul li a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -60,27 +69,12 @@ nav.fill ul li a:after {
   background: #aaa;
   height: 1px;
 }
-
-nav.fill ul li a {
-  transition: all 2s;
+nav.stroke ul li a:hover:after {
+  width: 100%;
 }
 
-nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
+.navbar > .active > a {
+	color: #DBB50B;
 }
 
 /* Keyframes */

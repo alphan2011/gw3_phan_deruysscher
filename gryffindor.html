@@ -31,9 +31,9 @@
     <header>
 
 <!-- desktop menu -->
-      <nav class="desktop-menu fill gry-fill">
-        <ul>
-          <li><a href="gryffindor.html">Gryffindor</a></li>
+      <nav class="desktop-menu stroke">
+        <ul class="navbar">
+          <li class="active"><a href="gryffindor.html">Gryffindor</a></li>
           <li><a href="slytherin.html">Slytherin</a></li>
           <a class="logo" href="index.html"><img class="logo" src="images/hyc-logo.png" alt="HYC - Hogwarts Yearbook Committee logo" /></a>
           <li><a href="hufflepuff.html">Hufflepuff</a></li>
@@ -55,6 +55,18 @@
         </nav>
       </div>
     </header>
+
+    <script>
+        $(document).ready(function () {
+
+            $('ul.navbar-nav > li')
+                    .click(function (e) {
+                $('ul.navbar-nav > li')
+                    .removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
 
     <main>
 

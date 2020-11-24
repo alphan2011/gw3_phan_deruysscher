@@ -30,7 +30,7 @@
     <header>
 
 <!-- desktop menu -->
-      <nav class="desktop-menu fill">
+      <nav class="desktop-menu stroke">
         <ul>
           <li><a href="gryffindor.html">Gryffindor</a></li>
           <li><a href="slytherin.html">Slytherin</a></li>
@@ -54,6 +54,18 @@
         </nav>
       </div>
     </header>
+
+    <script>
+        $(document).ready(function () {
+
+            $('ul.navbar > li')
+                    .click(function (e) {
+                $('ul.navbar > li')
+                    .removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
 
 <!-- Parallax background -->
     <main class="home-flex">
