@@ -39,7 +39,7 @@ body {
 /**************************END HEADER****************************/
 
 
-/* Navigation Animation */
+/* Start Navigation Animation */
 
 nav ul li a {
 	padding: 25px 10px;
@@ -74,7 +74,19 @@ nav.stroke ul li a:hover:after {
 }
 
 .navbar > .active > a {
-	color: #DBB50B;
+	color: #ad7f45;
+}
+
+.navbar > .active-sly > a {
+	color: #1d3529;
+}
+
+.navbar > .active-huf > a {
+	color: #897936;
+}
+
+.navbar > .active-rav > a {
+	color: #0e1a40;
 }
 
 /* Keyframes */
@@ -94,7 +106,7 @@ nav.stroke ul li a:hover:after {
   }
 }
 
-
+/* End Navigation Animation */
 
 /**************************START MAIN****************************/
 
