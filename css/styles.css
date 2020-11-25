@@ -74,7 +74,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .navbar > .active > a {
-	color: #ad7f45;
+	color: #722424;
 }
 
 .navbar > .active-sly > a {
@@ -404,11 +404,6 @@ footer {
 	color: #ffffff;
 }
 
-/* Styles that apply to all House pages */
-
-/* .alt-footer {
-	margin-top: 0;
-} */
 /**************************END FOOTER****************************/
 
 
@@ -507,28 +502,6 @@ footer {
 .menu a:hover{text-decoration:none; color:#ffffff;
 }
 /* ************************HAMBURGER MENU STYLES ***************************** */
-
-
-/**************************START SWUP ANIMATIONS****************************/
-
-/* .transition-fade {
-	opacity: 1;
-	transition: 500ms;
-	transform: translateX(0);
-	transform-origin: left;
-}
-
-html.is-animating .transition-fade {
-	opacity: 1;
-	transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-	opacity: 0;
-	transform: translateX(0);
-} */
-
-/**************************END SWUP ANIMATIONS****************************/
 
 
 /**************************START MIN-WIDTH 400px MEDIA QUERY****************************/
